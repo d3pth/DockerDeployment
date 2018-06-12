@@ -1,0 +1,6 @@
+﻿FROM microsoft/dotnet:2_1_300
+WORKDIR /app
+ADD . /app
+EXPOSE 5005
+ENV NAME test
+CMD ["dotnet", "Service.dll"]
